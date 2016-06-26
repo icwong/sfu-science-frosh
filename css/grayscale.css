@@ -1,15 +1,124 @@
+
 /*!
  * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
+@import url('https://fonts.googleapis.com/css?family=Jura');
+@import url('fonts.googleapis.com/css?family=Playfair+Display');
 
 body {
     width: 100%;
     height: 100%;
-    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Jura";
+    /*font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
+    /*color: #fff;*/
+    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+
+    background-color: #61398B;
+
+}
+
+
+.HobbiesMessage {
+    position: relative;
+    margin-bottom: 80px;
+    color: white;
+}
+
+li{
+    font-weight: bold;
+}
+
+#contact{
+        width: 100%;
+    padding: 50px 0;
     color: #fff;
+    /*background: url(../img/downloads-bg.jpg) no-repeat center center scroll;*/
+        background: url(../img/intro-bg.jpg
+        ) no-repeat bottom center scroll;
+    background-color: #4384BF;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+}
+
+#about{
+/*    width: 100%;
+    padding: 50px 0;
+    color: #fff;
+    height: 100%;
+    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+        background: url(../img/intro-bg.jpg
+        ) no-repeat bottom center scroll;
+    background-color: #4384BF;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;*/
+
+        display: table;
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+    text-align: center;
+    color: #fff;
+    background: url(../img/intro-bg.jpg
+        ) no-repeat bottom center scroll;
     background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    position: relative;
+
+}
+
+#register{
+    display: table;
+    width: 100%;
+    height: 100%;
+    padding: 50px 0;
+    text-align: center;
+    color: #fff;
+    background: url(../img/intro-bg.jpg
+        ) no-repeat bottom center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    position: relative;
+}
+
+.photoSFU{
+    margin-left: 15%;
+    margin-right: 20px;
+
+}
+#section{
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+    text-align: center;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    position: relative;
+}
+
+.oval{
+        width: 100px;
+    height: 100px;
+    background: red;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
 }
 
 html {
@@ -28,6 +137,10 @@ h6 {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
+}
+
+h2{
+    font-size: 70px;
 }
 
 p {
@@ -51,6 +164,10 @@ a {
     transition: all .2s ease-in-out;
 }
 
+
+
+
+
 a:hover,
 a:focus {
     text-decoration: none;
@@ -58,8 +175,12 @@ a:focus {
 }
 
 .light {
-    font-weight: 400;
-    font-size: 30px;
+    position: relative;
+    top: 0%;
+    height: 100px;
+    margin-top: 50px;
+    font-size: 40px;
+
 }
 .heavy {
     font-weight: 700;
@@ -151,27 +272,41 @@ a:focus {
     display: table;
     width: 100%;
     height: auto;
-    padding: 100px 0;
+    padding: 50px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/radioback.jpg) no-repeat bottom center scroll;
+    background: url(../img/intro-bg.jpg
+        ) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    position: relative;
+
 }
 
 .intro .intro-body {
     display: table-cell;
     vertical-align: middle;
+
 }
 
-.intro .intro-body .brand-heading {
-    font-size: 40px;
+
+.intro .intro-body {
+    font-size: 60px;
     color: white;
     font-weight: 800;
     padding-top: 30px;
+}
+
+.brand-heading{
+    position: relative;
+    color: white;
+    font-weight: 200;
+    font-size: 40px;
+    top: 175px;
+    font-family: 'Playfair Display', sans-serif;
 }
 
 .intro .intro-body .intro-text {
@@ -184,8 +319,8 @@ a:focus {
         padding: 0;
     }
 
-    .intro .intro-body .brand-heading {
-        font-size: 100px;
+    .intro .intro-body{ /*brand-heading*/
+        font-size: 105px;
     }
 
     .intro .intro-body .intro-text {
@@ -196,13 +331,15 @@ a:focus {
 .btn-circle {
     width: 70px;
     height: 70px;
-    margin-top: 15px;
+    margin-top: 300px;
     padding: 7px 16px;
-    border: 2px solid #fff;
-    border-radius: 100%!important;
+/*    border: 2px solid #fff;
+    border-radius: 100%!important;*/
     font-size: 40px;
-    color: #fff;
-    background: 0 0;
+    /*color: blue;*/
+    /*background: 0 0;*/
+    color:;
+    
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
@@ -271,17 +408,34 @@ a:focus {
     padding-top: 100px;
 }
 
+.HobbiesMessage{
+     list-style-type: none;
+}
+
+
+
 .download-section {
     width: 100%;
     padding: 50px 0;
     color: #fff;
-    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
-    background-color: #000;
+    /*background: url(../img/downloads-bg.jpg) no-repeat center center scroll;*/
+        background: url(../img/radioback.jpg
+        ) no-repeat bottom center scroll;
+    background-color: #4384BF;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+
 }
+
+
+
+.fa-long-arrow-right {
+    -webkit-transform: rotate(35deg);
+    margin-left: -490px;
+}
+
 
 #map {
     width: 100%;
